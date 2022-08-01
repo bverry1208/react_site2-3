@@ -1,0 +1,76 @@
+.text__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.text__inner__wrap{
+    width:31%;
+}
+
+.text__inner .text:nth-child(1),
+.text__inner .text:nth-child(2),
+.text__inner .text:nth-child(3) {
+    margin-bottom: 70px;
+}
+
+.text__inner .text span {
+    font-size: 16px;
+    background: lightcoral;
+    color: #fff;
+    padding: 2px 15px 0px;
+    border-radius: 30px;
+}
+
+.text__inner .text h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    position: relative;
+}
+
+.text__inner__wrap:first-child h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text__inner__wrap:first-child h3::before{
+    content: '';
+    background: none;
+}
+
+.text__inner .text h3::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0; top: 0;
+    background-size: cover;
+    background-color: #D3D8FA;
+}
+.text__inner__wrap:nth-child(1) .text h3::before {
+    background: none;
+}
+
+.text__inner__wrap:nth-child(2) .text:nth-child(1) h3::before{
+    background-image: url(https://cdn.music-flo.com/image/artist/575/943/02/04/402943575_5e16ea38.jpg?1578560057455/dims/resize/500x500/quality/90);
+}
+.text__inner__wrap:nth-child(2) .text:nth-child(2) h3::before{
+    background-image: url(https://cdn.music-flo.com/image/v2/artist/840/300/03/04/403300840_6287589e_s.jpg?1653037216626/dims/resize/x500/quality/90);
+}
+.text__inner__wrap:nth-child(3) .text:nth-child(1) h3::before{
+    background-image: url(https://cdn.music-flo.com/image/artist/040/241/03/04/403241040_5f45ae35.jpg?1598402102243/dims/resize/x500/quality/90);
+}
+.text__inner__wrap:nth-child(3) .text:nth-child(2) h3::before{
+    background-image: url(https://cdn.music-flo.com/image/album/429/526/02/04/402526429.jpg?1553114160869/dims/resize/500x500/quality/90);
+}
+
+.text__inner .text p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: justify;
+}
